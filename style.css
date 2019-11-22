@@ -1,0 +1,232 @@
+/* Style Général */
+body 
+{
+	margin: 0;
+
+	background: #000;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#banniere .fleur
+{
+	background-image: url('C:\Users\chloe\Desktop\SITEPERSO\docssite\images\image') ;
+	position: absolute;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: ;
+}
+	
+
+
+img
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#onglet{
+	padding-top: 8%;
+}
+#onglet a
+{	
+	padding-bottom:-20%;
+	font-family: 'Comfortaa', cursive;
+	color: #F5EEE8;
+	text-decoration: none;
+	padding:2em;
+	transform: translate(-50%,-50%);
+
+}
+
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 1em 0;
+}
+h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size:119px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h2{
+color:#F5EEE8;
+font-family: 'Bebas Neue', cursive;
+}
+p
+{
+	font-family: 'Comfortaa', cursive;
+	margin: 0;
+	padding: 1em 0;
+}
+
+
+
+/* Style de la Bannière */
+
+#banniere
+{
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+#banniere h1
+{
+	padding-top: 100px;
+	padding-bottom: 0;
+	color:#F5EEE8;
+}
+
+#banniere .content-wrap, 
+#section-a .content-wrap
+{
+	padding: 0 1.5em;
+}
+
+/* Style de la Section A */
+
+#section-a
+{
+	background:#000;
+	color:#F5EEE8;
+	padding-bottom: 2em;
+}
+
+#video
+{
+	background :#000;
+	color: #F5EEE8;
+	padding-bottom: 2em;
+}
+/*#section-video
+{
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background:#975030;
+	padding-bottom: 2em;*/
+
+}
+/* Style de la Section B (Liste de Cartes) */
+
+#section-b
+{
+	background-color:#000;
+	padding:2em 2em 1em 1em;
+}
+
+#section-b ul
+{
+	background-color:#000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#section-b li
+{
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content
+{
+	padding: 1.5em;
+}
+
+/* Style de la Section C */
+
+#section-c
+{
+	background: #fff;
+	color: #333;
+	padding: 2em;
+}
+
+/* Style de la Section D */
+
+#section-d .box
+{
+	padding: 2em;
+	color: #fff;
+}
+
+#section-d .box:first-child
+{
+	background: #2690d4;
+}
+
+/* Bas de page (Footer) */
+
+#main-footer
+{
+	padding: 2em;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#main-footer a
+{
+	color: #2690d4;
+	text-decoration: none;
+}
+
+/* Media Query - Ce qui permet de switcher entre les affichages mobile et pc */
+
+@media(min-width: 640px)
+{
+	.grid
+	{
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+
+	#section-a .content-text
+	{
+		/*columns: 2;
+		column-gap: 2em;*/
+	}
+
+	#section-a .content-text p
+	{
+		padding-top: 0;
+	}
+
+	.content-wrap, 
+	#section-b ul
+	{
+		grid-column: 2/4;
+	}
+
+	#section-b ul
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#section-b li
+	{
+		width: 31%;
+	}
+
+	.box, #main-footer div
+	{
+		grid-column: span 2;
+	}
+}
