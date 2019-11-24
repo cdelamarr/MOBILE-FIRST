@@ -17,7 +17,7 @@ body {
 }
 
 .fleur {
-	background-image: url("fleur.png");
+	background-image: url("/img/fleur.png");
 	background-size: cover;
 	height: 600px;
 }
@@ -152,7 +152,7 @@ video {
 /* Style de la Section C */
 
 #section-c {
-	background: #fff;
+	background-image: url("/img/foret-noir.png");
 	color: #333;
 	padding: 2em;
 }
