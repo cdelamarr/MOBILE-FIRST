@@ -87,26 +87,6 @@ nav {
 	align-self: center;
 }
 
-@media (min-width: 875px) {
-	.content-wrap>h1 {
-		font-size: 6em;
-	}
-	.image_reseaux {
-		width: 60px;
-	}
-	#section-a {
-		display: flex;
-		align-items: center;
-	}
-	#section-a .video-wrap {
-		width: 50%;
-		margin-left: 2em;
-	}
-	#section-a .content-wrap {
-		width: 50%;
-	}
-}
-
 /* Style de la Section A */
 
 #section-a {
@@ -153,8 +133,19 @@ video {
 
 #section-c {
 	background-image: url("/img/foret-noir.png");
-	color: #333;
+	display: flex;
+	flex-direction: column;
 	padding: 2em;
+}
+
+#section-c .image {
+	background-image: url("/img/moi_feuillr.jpg");
+	background-size: cover;
+	background-position: bottom;
+	margin: auto;
+	border-radius: 20px;
+	height: 350px;
+	width: 100%;
 }
 
 /* Style de la Section D */
@@ -184,6 +175,13 @@ video {
 
 /* Media Query - Ce qui permet de switcher entre les affichages mobile et pc */
 
+@media(min-width: 425px) {
+	#section-c .image {
+		width: 350px;
+		min-width: 350px;
+	}
+}
+
 @media(min-width: 640px) {
 	#section-a .content-text {
 		/*columns: 2;
@@ -204,5 +202,34 @@ video {
 	}
 	.box, #main-footer div {
 		grid-column: span 2;
+	}
+}
+
+@media (min-width: 875px) {
+	.content-wrap>h1 {
+		font-size: 6em;
+	}
+	.image_reseaux {
+		width: 60px;
+	}
+	#section-a {
+		display: flex;
+		align-items: center;
+	}
+	#section-a .video-wrap {
+		width: 50%;
+		margin-left: 2em;
+	}
+	#section-a .content-wrap {
+		width: 50%;
+	}
+	#section-c {
+		flex-direction: row-reverse;
+	}
+	#section-c .image {
+		margin-right: 2em;
+	}
+	#section-c .content-wrap {
+		text-align: right;
 	}
 }
