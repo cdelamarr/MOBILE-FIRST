@@ -133,6 +133,7 @@ video {
 
 #section-c {
 	background-image: url("/img/foret-noir.png");
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	padding: 2em;
@@ -231,5 +232,12 @@ video {
 	}
 	#section-c .content-wrap {
 		text-align: right;
+	}
+	#section-c .underline::after {
+		content: "";
+		display: inline-block;
+		border-top-style: solid;
+		border-top-width: 4px;
+		width: 4rem;
 	}
 }
