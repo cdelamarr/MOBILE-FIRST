@@ -16,6 +16,15 @@ body {
 	text-align: center;
 }
 
+p {
+	font-size: medium;
+	font-family: 'Comfortaa', cursive;
+}
+
+h2{
+	font-family: 'Bebas Neue';
+}
+
 .fleur {
 	background-image: url("/img/fleur.png");
 	background-size: cover;
@@ -153,11 +162,11 @@ video {
 
 #section-d .box {
 	padding: 2em;
-	color: #fff;
+	color:#F5EEE8;
 }
 
 #section-d .box:first-child {
-	background: #2690d4;
+	background: #8D3D27;
 }
 
 /* Bas de page (Footer) */
@@ -165,12 +174,12 @@ video {
 #main-footer {
 	padding: 2em;
 	background: #000;
-	color: #fff;
+	color:#F5EEE8;
 	text-align: center;
 }
 
 #main-footer a {
-	color: #2690d4;
+	color: #47120E;
 	text-decoration: none;
 }
 
