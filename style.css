@@ -6,8 +6,10 @@ body {
 	background: #fff;
 	color: #fff;
 	font-size: 1.1em;
-	line-height: 1.5;/* ecart ligne texte*/
-	text-align: center;/*aligne largeur*/
+	line-height: 1.5;
+	/* ecart ligne texte*/
+	text-align: center;
+	/*aligne largeur*/
 }
 
 p {
@@ -20,17 +22,23 @@ h2{
 }
 
 .fleur {
-	background-image: url("/img/fleur.png");/**/
-	background-size: cover;/*elle couvre l'arrière. elle reste reste dans le cadre*/
-	height: 600px;/*hauteur du background*/
+	background-image: url("/img/fleur.png");
+	background-size: cover;
+	/*elle couvre l'arrière. elle reste reste dans le cadre*/
+	height: 600px;
+	/*hauteur du background*/
 }
 
 nav {
 	/*controle tous les liens*/  
-	display: flex; /*élements alignés en largeur*/ 
-	flex-flow: row wrap;/*il agit en conteneur suite element reprend à la ligne en petit*/
-	justify-content: center;/*aligne en hauteur*/
-	align-items: center;/*aligne en largeur*/
+	display: flex; 
+	/*élements alignés en largeur*/ 
+	flex-flow: row wrap;
+	/*il agit en conteneur suite element reprend à la ligne en petit*/
+	justify-content: center;
+	/*aligne en hauteur*/
+	align-items: center;
+	/*aligne en largeur*/
 }
 #onglet {
 	grid-row-start: 1;
@@ -42,13 +50,16 @@ nav {
 #onglet>a {
 	/*gère les liens*/
 
-	padding-left: 20px;/*marge interieure*/
+	padding-left: 20px;
+	/*marge interieure*/
 	padding-right: 20px;
 	padding-bottom: -20%;
 	font-family: 'Comfortaa', cursive;
 	color: #F5EEE8;
-	text-decoration: none;/*pas de lien souligné*/
-	padding: 2em;/*marge haut droite bas gauche*/
+	text-decoration: none;
+	/*pas de lien souligné*/
+	padding: 2em;
+	/*marge haut droite bas gauche*/
 }
 
 #reseaux {
@@ -67,7 +78,8 @@ nav {
 
 #liens_btn {
 	color: white;
-	text-decoration: none;/*pas de lien souligné*/
+	text-decoration: none;
+	/*pas de lien souligné*/
 }
 
 .image_reseaux {
@@ -80,9 +92,12 @@ nav {
 .content-wrap1 {
 	/*tout le contenu de la bannière*/
 	height: 600px;
-	display: grid;/*agence object en grid*/
-	grid-template-columns: 1fr;/*une colones*/
-	grid-template-rows: 1fr 1fr 1fr;/*ligne horizon*/
+	display: grid;
+	/*agence object en grid*/
+	grid-template-columns: 1fr;
+	/*une colones*/
+	grid-template-rows: 1fr 1fr 1fr;
+	/*ligne horizon*/
 }
 
 .content-wrap1>h1 {
@@ -124,20 +139,62 @@ video {
 }
 
 #section-b li {
-	margin-bottom: 1em;/*marge exterieur en bas*/ 
+	margin-bottom: 1em;
+	/*marge exterieur en bas*/ 
 	background: #fff;
 	color: #333;
 }
 
 .card img {
-	display: block;/*nouvelle ligne largeur*/
+	display: block;
+	/*nouvelle ligne largeur*/
 	width: 100%;
-	height: auto;/*par rapport à la hauteur de l'écran*/
+	height: auto;
+	/*par rapport à la hauteur de l'écran*/
 }
 
 .card-content {
-	padding: 1.5em;/*texte interieur*/
+	padding: 1.5em;
+	/*texte interieur*/
 }
+/*GALERIE*/
+/* PHOTOS */
+#photo {
+	max-width: 100%;
+	margin: auto;
+	padding: 2rem 0;
+}
+
+#galerie {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#galerie img {
+	flex: 1 1 auto;
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	max-height: 130px;
+	margin: 0.5rem;
+	object-fit: cover;
+	border: 1px solid #28323B;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #28323B;
+	transform: scale(1);
+	transition: transform 1s;
+}
+
+#galerie img:hover {
+	transform-origin: 50% 50%;
+	transform: scale(2);
+	z-index: 999;
+	border-radius: 5px;
+	box-shadow: none;
+}
+/* FIN PHOTOS */
 
 /* Style de la Section C */
 
@@ -186,7 +243,7 @@ video {
 
 /* Media Query - Ce qui permet de switcher entre les affichages mobile et pc */
 
-@media(min-width: 425px) {
+@media(min-width: 360px) {
 	/*petit téléphone*/
 	#section-c .image {
 		width: 350px;
