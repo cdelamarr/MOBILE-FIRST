@@ -157,7 +157,54 @@ video {
 	padding: 1.5em;
 	/*texte interieur*/
 }
-/*GALERIE*/
+
+/* Style de la Section C */
+
+#section-c {
+	background-image: url("/img/foret-noir.png");/**/
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+}
+
+#section-c .image {
+	background-image: url("/img/moi_feuillr.jpg");
+	background-size: cover;
+	background-position: bottom;
+	margin: auto;
+	border-radius: 20px;
+	height: 350px;
+	width: 100%;
+}
+
+/* Style de la Section D */
+
+#section-d .box {
+	padding: 2em;
+	color:#F5EEE8;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#section-d .box:first-child {
+	background: #8D3D27;
+}
+
+/* Bas de page (Footer) */
+
+#main-footer {
+	padding: 2em;
+	background: #000;
+	color:#F5EEE8;
+	text-align: center;
+}
+
+#main-footer a {
+	color: #8D3D27;
+	text-decoration: none;
+}
+/*GALERIE***********************************/
 /* PHOTOS */
 #photo {
 	max-width: 100%;
@@ -190,56 +237,11 @@ video {
 #galerie img:hover {
 	transform-origin: 50% 50%;
 	transform: scale(2);
-	/*z-index: 999;*/
 	border-radius: 5px;
 	box-shadow: none;
 }
-/* FIN PHOTOS */
+/* FIN PHOTOS *********************************/
 
-/* Style de la Section C */
-
-#section-c {
-	background-image: url("/img/foret-noir.png");/**/
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	padding: 2em;
-}
-
-#section-c .image {
-	background-image: url("/img/moi_feuillr.jpg");
-	background-size: cover;
-	background-position: bottom;
-	margin: auto;
-	border-radius: 20px;
-	height: 350px;
-	width: 100%;
-}
-
-/* Style de la Section D */
-
-#section-d .box {
-	padding: 2em;
-	color:#F5EEE8;
-}
-
-#section-d .box:first-child {
-	background: #8D3D27;
-}
-
-/* Bas de page (Footer) */
-
-#main-footer {
-	padding: 2em;
-	background: #000;
-	color:#F5EEE8;
-	text-align: center;
-}
-
-#main-footer a {
-	color: #8D3D27;
-	text-decoration: none;
-}
 
 /* Media Query - Ce qui permet de switcher entre les affichages mobile et pc */
 
