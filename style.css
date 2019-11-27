@@ -166,10 +166,12 @@ video {
 }
 
 #galerie {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: column;
+	/*flex-direction: row;*/
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 }
 
 #galerie img {
@@ -180,9 +182,7 @@ video {
 	max-height: 130px;
 	margin: 0.5rem;
 	object-fit: cover;
-	border: 1px solid #28323B;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px #28323B;
 	transform: scale(1);
 	transition: transform 1s;
 }
@@ -190,7 +190,7 @@ video {
 #galerie img:hover {
 	transform-origin: 50% 50%;
 	transform: scale(2);
-	z-index: 999;
+	/*z-index: 999;*/
 	border-radius: 5px;
 	box-shadow: none;
 }
@@ -245,14 +245,17 @@ video {
 
 @media(min-width: 360px) {
 	/*petit téléphone*/
+    /*home*/
 	#section-c .image {
 		width: 350px;
 		min-width: 350px;
+		/*fin home*/
 	}
 }
 
 @media(min-width: 640px) {
 	/*tablette*/
+    /*home*/
 	#section-a .content-text p {
 		padding-top: 0;
 	}
@@ -268,11 +271,13 @@ video {
 	}
 	.box, #main-footer div {
 		grid-column: span 2;
+		/*fin home*/
 	}
 }
 
 @media (min-width: 875px) {
 	/*ecrant ordinateur grand*/
+	/*home*/
 	.content-wrap>h1 {
 		font-size: 6em;
 	}
@@ -305,5 +310,7 @@ video {
 		border-top-style: solid;
 		border-top-width: 4px;
 		width: 4rem;
+		/*fin home*/
+
 	}
 }
